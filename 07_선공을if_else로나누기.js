@@ -74,11 +74,17 @@ PC 묵찌빠 = pc 가능한묵찌빠[정수화( Random 소수점 × 9 + 1)]
  다시 한다 = continue 
 }
       If ( pc 묵찌빠 == 찌) { 선공 = pc / 소유금액 = 변동없음
-다시하는데, 이제, pc 선공으로 다시 한다. 
+다시하는데, 이제, pc 선공으로 다시 한다. = 여기에서 continue 를 하면 어디까지 갈까???
+/ play = false 시킨다 -> 밖으로 나간다. -> 여기에서 밖이면, 어디방향??
+아래면, 선공=PC로 적어두고, 
+continue 를 써서 위로 올리고, switch 선공에서 pc가 선공인 곳으로 가게 한다/ 
 
 } 
 
 } 
+
+CASE PC가 선공인경우 :
+
 
  }
 
@@ -89,24 +95,6 @@ break :
 } 
 
 
-
-
-// ✅ 0 이 가위, 1이 바위, 2가 보 가 되게 하기 
-switch (computer_number) {
-    case 0:
-        computer_choice[0] = "가위";
-    break;
-
-    case 1:
-        computer_choice[0] = "바위";
-    break;
-
-    case 2:
-        computer_choice[0] = "보";
-    break;  
-
-    default:
-        break;
 }
 
 } 
