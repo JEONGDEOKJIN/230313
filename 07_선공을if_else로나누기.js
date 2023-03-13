@@ -58,9 +58,56 @@ While (묵찌바하는횟수 > 20 || 갖고있는돈 <=0) {
 갖고있는돈 = 20000 - 처음배팅금액
 
 
-Switch (유저 선공) 
+Switch (선공) {
+case 유저가 선공 : 
+
+Play = true 
+While (play) {
+
+ 유저 묵찌빠 = Prompt (" 가 위 바위 보 선택해 ")
+Pc 가능한 묵찌빠 = [,묵, 찌, 빠] 
+PC 묵찌빠 = pc 가능한묵찌빠[정수화( Random 소수점 × 9 + 1)]
+
+ Switch(유저가능묵찌빠) {
+  Case 묵 : 
+      If (pc 묵찌빠 == 묵) { 선공 = 유저 / 소유금액 = 변동없음
+ 다시 한다 = continue 
+}
+      If ( pc 묵찌빠 == 찌) { 선공 = pc / 소유금액 = 변동없음
+다시하는데, 이제, pc 선공으로 다시 한다. 
+
+} 
+
+} 
+
+ }
 
 
+break : 
+
+
+} 
+
+
+
+
+// ✅ 0 이 가위, 1이 바위, 2가 보 가 되게 하기 
+switch (computer_number) {
+    case 0:
+        computer_choice[0] = "가위";
+    break;
+
+    case 1:
+        computer_choice[0] = "바위";
+    break;
+
+    case 2:
+        computer_choice[0] = "보";
+    break;  
+
+    default:
+        break;
+}
 
 } 
 
